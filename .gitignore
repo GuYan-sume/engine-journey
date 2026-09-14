@@ -1,0 +1,27 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+Debug/
+Release/
+x64/
+x86/
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.idb
+
+# CMake（第 3 周以后会用到）
+build/
+out/
+CMakeCache.txt
+CMakeFiles/
+
+# 编辑器
+.vscode/
+.idea/
+
+# 系统
+Thumbs.db
+Desktop.ini
