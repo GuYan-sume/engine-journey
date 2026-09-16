@@ -11,7 +11,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="hello.cpp">
+    <ClCompile Include="wendu.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

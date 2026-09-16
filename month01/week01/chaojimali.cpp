@@ -1,4 +1,4 @@
-﻿#include <bits/stdc++.h>//万能头
+﻿#include <iostream>   // 标准 C++ 头文件，MSVC 和 GCC 都有
 using namespace std;//std函数方便写代码
 int main()//主函数
 {
