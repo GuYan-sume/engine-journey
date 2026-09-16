@@ -3,21 +3,13 @@
 // 这个文件只有一件事：先让它跑起来。跑起来了，这个月就已经成功开始了。
 
 #include <iostream>
+#include <windows.h>   // 提供 SetConsoleOutputCP：用来设置控制台的代码页
 
 int main() {
+    SetConsoleOutputCP(65001);  // 65001 = UTF-8，让控制台按 UTF-8 解读输出
+
     std::cout << "engine-journey week01 OK\n";
-
-    // TODO 1（Day 4-5）：加一个 int 变量存你的年龄，打印出来。
-    //   提示：std::cout << "年龄: " << age << "\n";
-
-    // TODO 2（Day 5）：故意删掉某一行末尾的分号，重新编译，
-    //   把完整的报错信息抄进 docs/学习日志.md。观察：报错指的行号对不对？
-    //   再把 std::cout 拼错成 std::cou 编译一次，比较两次报错有什么不同。（记得改回来）
-
-    // TODO 3（Day 6）：温度转换 —— 输入摄氏温度，输出华氏温度。
-    //   公式：F = C * 9 / 5 + 32
-    //   验收：输入 100 输出 212；输入 37 输出 98.6
-    //   想清楚：为什么要用 double 而不是 int？整数除法会出什么问题？
-
+    int age = 18;
+    std::cout << "年龄:" << age << "\n";
     return 0;
 }
