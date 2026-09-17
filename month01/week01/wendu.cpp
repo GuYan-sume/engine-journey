@@ -12,10 +12,12 @@
 //       先想清楚差在哪，那正是今天最重要的一课。
 
 #include <iostream>
-
+#include<windows.h>
 int main() {
+    SetConsoleOutputCP(65001);
     // 你的代码从这里开始写
     double c;
+    std::cout << "请输入摄氏温度\n";
     std::cin >> c;
     c = c * 9 / 5 + 32;
     std::cout << c << "\n";
