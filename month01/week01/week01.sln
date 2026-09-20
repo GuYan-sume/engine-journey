@@ -8,6 +8,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "week01_mario", "week01_mari
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "week01_wendu", "week01_wendu.vcxproj", "{B2C3D4E5-2222-4E2A-9E31-6C5A0D4B1F29}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "week01_xunhuan", "week01_xunhuan.vcxproj", "{C3D4E5F6-3333-4E2A-9E31-6C5A0D4B1F30}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -26,6 +28,10 @@ Global
 		{B2C3D4E5-2222-4E2A-9E31-6C5A0D4B1F29}.Debug|x64.Build.0 = Debug|x64
 		{B2C3D4E5-2222-4E2A-9E31-6C5A0D4B1F29}.Release|x64.ActiveCfg = Release|x64
 		{B2C3D4E5-2222-4E2A-9E31-6C5A0D4B1F29}.Release|x64.Build.0 = Release|x64
+		{C3D4E5F6-3333-4E2A-9E31-6C5A0D4B1F30}.Debug|x64.ActiveCfg = Debug|x64
+		{C3D4E5F6-3333-4E2A-9E31-6C5A0D4B1F30}.Debug|x64.Build.0 = Debug|x64
+		{C3D4E5F6-3333-4E2A-9E31-6C5A0D4B1F30}.Release|x64.ActiveCfg = Release|x64
+		{C3D4E5F6-3333-4E2A-9E31-6C5A0D4B1F30}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
