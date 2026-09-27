@@ -40,10 +40,11 @@ int main() {
 
     // 你的代码从这里开始写
     std::string name = "顾言";
-    char initial = "G";
+    char initial = 'G';
     int age = 18;
     double height = 1.75;
-    bool isStudent
+    bool isStudent = true;
+        const int birthYear = 2007;
 
     return 0;
 }
