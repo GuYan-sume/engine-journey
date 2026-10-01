@@ -22,6 +22,8 @@
 | `week01_hello` | `hello.cpp` | `build\Debug\week01_hello.exe` | 工具链验收，确认「写-编-跑」通了 |
 | `week01_mario` | `chaojimali.cpp` | `build\Debug\week01_mario.exe` | 字符画（双击 `看马里奥.cmd` 也能跑） |
 | `week01_wendu` | `wendu.cpp` | `build\Debug\week01_wendu.exe` | 温度转换（本周的正式练习） |
+| `week01_xunhuan` | `xunhuan.cpp` | `build\Debug\week01_xunhuan.exe` | for 循环三个小练习 |
+| `week01_login` | `29.cpp` | `build\Debug\week01_login.exe` | 登录判断（账号 xiaoba / 密码 123） |
 
 三个词的关系，记住这一句就行：
 
