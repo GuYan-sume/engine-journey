@@ -1,5 +1,7 @@
 @echo off
 setlocal
+rem Switch the console to UTF-8 so Chinese output is not garbled.
+chcp 65001 >nul
 rem ============================================================
 rem  Optional shortcut: build and run a .c or .cpp without
 rem  creating a Visual Studio project (VS project is still the
