@@ -1,13 +1,17 @@
 @echo off
 setlocal
 rem ============================================================
-rem  Optional shortcut: build and run a .cpp without creating a
-rem  Visual Studio project (VS project is still the main way).
+rem  Optional shortcut: build and run a .c or .cpp without
+rem  creating a Visual Studio project (VS project is still the
+rem  main way).
 rem  Usage: tools\build_run.bat month01\week01\hello.cpp
+rem         tools\build_run.bat month01\week03\demo.c
 rem  Uses /utf-8 so Chinese comments do not raise warning C4819.
+rem    .c   -> /std:c17 + _CRT_SECURE_NO_WARNINGS (keeps scanf usable)
+rem    .cpp -> /EHsc + /std:c++17
 rem ============================================================
 if "%~1"=="" (
-    echo Usage  : tools\build_run.bat ^<source.cpp^>
+    echo Usage  : tools\build_run.bat ^<source.c or source.cpp^>
     echo Example: tools\build_run.bat month01\week01\hello.cpp
     exit /b 1
 )
@@ -19,9 +23,13 @@ if not exist "%VSDIR%\Common7\Tools\VsDevCmd.bat" (
     exit /b 1
 )
 call "%VSDIR%\Common7\Tools\VsDevCmd.bat" -arch=x64 -host_arch=x64 -no_logo >nul
+
+set "BUILDFLAGS=/nologo /utf-8 /W4 /EHsc /std:c++17"
+if /i "%~x1"==".c" set "BUILDFLAGS=/nologo /utf-8 /W4 /D_CRT_SECURE_NO_WARNINGS /std:c17"
+
 pushd "%~dp1"
-echo [BUILD] %~nx1
-cl /nologo /EHsc /std:c++17 /utf-8 /W4 "%~nx1"
+echo [BUILD] %~nx1  [%BUILDFLAGS%]
+cl %BUILDFLAGS% "%~nx1"
 if errorlevel 1 (
     echo.
     echo [FAILED] Read the FIRST error line only the rest is usually noise.

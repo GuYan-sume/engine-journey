@@ -23,6 +23,10 @@
     │   └── 每周复盘模板.md
     ├── tools/
     │   └── build_run.bat        备选：不建 VS 项目也能编译运行
+    ├── c-lang/                  ★ C 语言练习场（一个 .c = 一个程序）
+    │   ├── README.md            怎么用（配合头歌实训）
+    │   ├── run.bat              编译运行本文件夹里的 .c
+    │   └── template.c           空白模板，复制它开始写
     ├── month01/                 ★ 入门月
     │   ├── README.md            本月总览
     │   ├── week01/              认识岗位 + 环境 + 第一个程序
@@ -43,6 +47,15 @@
 > 快捷方式（可选）：开始菜单搜 Developer Command Prompt for VS 2022，cd 到当天目录后：
 > `cl /EHsc /std:c++17 hello.cpp && hello.exe`
 
+## 怎么练 C 语言（c-lang）
+
+`month01/` 是 C++ 的练习，**C 语言单独放在 `c-lang/`**：一个 `.c` 文件就是一个程序，不用建 VS 工程。
+
+    cd C:\Users\84888\Documents\engine-journey
+    c-lang\run.bat 01_hello.c
+
+主要用途：把头歌（EduCoder）实训的代码在本地先跑一遍验证。详细用法见 `c-lang\README.md`；
+本地 MSVC 和头歌 gcc 的差异见 `docs\环境配置.md` 的「写 C 语言」一节。
 ## 每日约定（只要做到这 3 条就赢）
 
 1. 每天至少 1 次提交，提交信息写成 `month01 week02: 简易计算器`
